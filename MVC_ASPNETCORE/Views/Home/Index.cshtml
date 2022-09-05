@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<h1>사용자 번호: @Model.UserNo</h1>
+<h1>사용자 이름: @Model.UserName</h1>*@
+
+@*<h1>사용자 번호: @ViewBag.User.UserNo</h1>
+<h1>사용자 이름: @ViewBag.User.UserName</h1>*@
+
+@{
+    User user = ViewData["User"] as User;
+}
+<h1>@user.UserNo</h1>
+<h1>@user.UserName</h1>
